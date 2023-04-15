@@ -1,2 +1,2 @@
-dataDir='./data'
-outputPath='./nginx.conf'
+dataDir='/etc/srpm.d'
+outputPath='/etc/nginx/conf.d/srpm.conf'

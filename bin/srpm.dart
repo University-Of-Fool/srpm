@@ -15,7 +15,7 @@ void main(List<String> arguments) async {
   exitCode = 0;
 
   var parser = ArgParser();
-  parser.addOption('config', abbr: 'c', defaultsTo: './config.toml');
+  parser.addOption('config', abbr: 'c', defaultsTo: '/etc/srpm.d/config.toml');
   parser.addFlag('help', abbr: 'h');
   parser.addCommand('list');
   var create = parser.addCommand('create');
@@ -127,12 +127,12 @@ void printHelp() {
   print("""
 Usage: srpm [global options] <command> [options]
 
-srpm @1.0.0
+srpm @1.0.1
 
 Global Options:
   -h --help     Display this help
   -c --config   Define configuration file path
-                (defaults to: ./config.toml)
+                (defaults to: /etc/srpm.d/config.toml)
 Commands and Options:
   list          List all the configured proxies
 
