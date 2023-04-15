@@ -1,6 +1,6 @@
 name: srpm
 description: The Simple Reverse Proxy Manager
-version: 1.0.0
+version: 1.0.1
 repository: https://github.com/University-Of-Fool/srpm
 
 environment:
